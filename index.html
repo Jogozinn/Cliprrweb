@@ -15,7 +15,7 @@
       <header class="topbar">
   <div class="container topbar-shell">
     <a class="brand-lockup" href="./index.html">
-      <img src="./assets/brand/app-icon.jpg" alt="Cliprr app icon" style="width: 40px; height: 40px; border-radius: 10px;" />
+      <img src="./assets/brand/app-icon-96.jpg" alt="Cliprr app icon" width="40" height="40" />
       <div class="brand-copy">
         <strong>Cliprr</strong>
         <span>Twitch clip automation</span>
@@ -36,6 +36,15 @@
       </button>
     </div>
   </div>
+  <div class="container mobile-panel" data-mobile-panel hidden>
+    <nav class="mobile-nav" aria-label="Mobile">
+      <a class="mobile-link" href="./index.html" aria-current="page">Home</a>
+      <a class="mobile-link" href="./workflow.html">Workflow</a>
+      <a class="mobile-link" href="./pricing.html">Plans</a>
+      <a class="mobile-link" href="./faq.html">FAQ</a>
+    </nav>
+    <a class="button mobile-panel-cta" href="https://github.com/Jogozinn/cliprr-releases/releases/latest">Download Trial</a>
+  </div>
 </header>
 
       <main>
@@ -44,22 +53,30 @@
           <div class="container hero-center-stack">
             <div class="hero-copy">
               <span class="eyebrow">Twitch clip automation</span>
-              <h1>Turn Twitch streams into clips automatically.</h1>
+              <h1 class="hero-title-compact">
+                <span>Turn Twitch</span>
+                <span>streams</span>
+                <span>into clips</span>
+                <span>automatically.</span>
+              </h1>
               <p>
                 Cliprr is a desktop system that monitors streams, catches high-signal moments, and gives you a dedicated workflow to review and export clips without endless manual scrubbing.
               </p>
-             <!-- Inside your Homepage Hero -->
-                  <div class="action-row">
-                    <!-- Primary button now drives the free download -->
-                    <a class="button" href="LINK_TO_YOUR_ZIP_FILE">Download Free Trial</a>
-                    <!-- Secondary button goes to pricing for those ready to buy -->
-                    <a class="button-secondary" href="./pricing.html">Buy License Key</a>
-                  </div>
+              <div class="action-row">
+                <a class="button" href="https://github.com/Jogozinn/cliprr-releases/releases/latest">Download Free Trial</a>
+                <a class="button-secondary" href="./pricing.html">Buy License Key</a>
+              </div>
             </div>
             
             <div class="screenshot-frame">
-              <!-- Keep your wide, full application UI here -->
-              <img src="./Screenshots/ShortMonitor.jpg" alt="Cliprr full application interface" />
+              <img
+                src="./Screenshots/ShortMonitor.jpg"
+                alt="Cliprr full application interface"
+                width="1917"
+                height="1020"
+                decoding="async"
+                fetchpriority="high"
+              />
             </div>
           </div>
         </section>
@@ -67,7 +84,7 @@
         <!-- HIGH-LEVEL VALUE PROPS: No screenshots, just clean feature cards -->
         <section class="section">
           <div class="container">
-            <div class="section-lead" style="display: flex; flex-direction: column; align-items: center; text-align: center; margin-bottom: 42px; max-width: 720px; margin-left: auto; margin-right: auto;">
+            <div class="section-lead section-lead-centered">
               <span class="eyebrow">The Cliprr Advantage</span>
               <h2>Stop scrubbing VODs. Start publishing.</h2>
             </div>
@@ -99,8 +116,28 @@
             </div>
             <section class="panel video-panel">
               <div class="video-frame">
-                <!-- IMPORTANT: Add a real thumbnail over this iframe before launch -->
-                <iframe src="https://www.youtube.com/embed/tLtgKaXuBjU?si=po5QodKwc94wQCiZ" title="Cliprr product walkthrough" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <button
+                  class="video-launch"
+                  type="button"
+                  data-video-launch
+                  data-video-src="https://www.youtube.com/embed/tLtgKaXuBjU?autoplay=1&amp;rel=0"
+                  aria-label="Play the Cliprr product walkthrough video"
+                >
+                  <img
+                    src="./Screenshots/ShortMonitor.jpg"
+                    alt=""
+                    width="1917"
+                    height="1020"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                  <span class="video-launch-overlay" aria-hidden="true"></span>
+                  <span class="video-launch-play" aria-hidden="true"></span>
+                  <span class="video-launch-copy">
+                    <strong>Play walkthrough</strong>
+                    
+                  </span>
+                </button>
               </div>
             </section>
           </div>
@@ -114,16 +151,23 @@
         <span class="eyebrow">Why Cliprr exists</span>
         <h2>Stop wasting time watching streams for clips.</h2>
       </div>
-      <p style="color: var(--text-muted); font-size: 1.05rem; line-height: 1.7; margin-bottom: 12px;">
+      <p class="section-copy section-copy-tight">
         If you want to grow a channel, you have to post clips. But the reality is that manual clipping takes up way too much time. Most tools either guess what a highlight is or they force you to sit there scrubbing through a six hour stream just to find one good play.
       </p>
-      <p style="color: var(--text-muted); font-size: 1.05rem; line-height: 1.7;">
+      <p class="section-copy">
         I built Cliprr because I wanted a tool that actually listens to stream data. It uses things like chat spikes and custom cooldowns to catch highlights as they happen, but it keeps you in charge of what gets saved. It is a tool designed to fit into your existing workflow without being over-complicated.
       </p>
     </div>
     
     <div class="screenshot-frame origin-visual">
-       <img src="./assets/brand/precision-engine.jpg" alt="Visualization of Cliprr engine logic" />
+       <img
+         src="./assets/brand/precision-engine.jpg"
+         alt="Visualization of Cliprr engine logic"
+         width="1671"
+         height="940"
+         loading="lazy"
+         decoding="async"
+       />
     </div>
   </div>
 </section>
@@ -148,14 +192,14 @@
       <footer class="footer">
         <div class="container footer-shell">
           <div class="footer-brand">
-            <img src="./assets/brand/app-icon.jpg" alt="Cliprr icon" />
+            <img src="./assets/brand/app-icon-96.jpg" alt="Cliprr icon" width="42" height="42" loading="lazy" decoding="async" />
             <div>
               <strong>Cliprr</strong>
               <p class="footer-note">Twitch clip automation built around monitoring, review, and repeatable output.</p>
             </div>
           </div>
           <div class="footer-links">
-            <a href="./platform.html">Platform</a>
+            <a href="./index.html">Home</a>
             <a href="./workflow.html">Workflow</a>
             <a href="./pricing.html">Pricing</a>
             <a href="./faq.html">FAQ</a>

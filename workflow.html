@@ -12,7 +12,7 @@
       <header class="topbar">
   <div class="container topbar-shell">
     <a class="brand-lockup" href="./index.html">
-      <img src="./assets/brand/app-icon.jpg" alt="Cliprr app icon" style="width: 40px; height: 40px; border-radius: 10px;" />
+      <img src="./assets/brand/app-icon-96.jpg" alt="Cliprr app icon" width="40" height="40" />
       <div class="brand-copy">
         <strong>Cliprr</strong>
         <span>Twitch clip automation</span>
@@ -33,6 +33,15 @@
       </button>
     </div>
   </div>
+  <div class="container mobile-panel" data-mobile-panel hidden>
+    <nav class="mobile-nav" aria-label="Mobile">
+      <a class="mobile-link" href="./index.html">Home</a>
+      <a class="mobile-link" href="./workflow.html" aria-current="page">Workflow</a>
+      <a class="mobile-link" href="./pricing.html">Plans</a>
+      <a class="mobile-link" href="./faq.html">FAQ</a>
+    </nav>
+    <a class="button mobile-panel-cta" href="https://github.com/Jogozinn/cliprr-releases/releases/latest">Download Trial</a>
+  </div>
 </header>
       <main>
         <!-- HERO -->
@@ -40,7 +49,11 @@
           <div class="container hero-center-stack">
             <div class="hero-copy">
               <span class="eyebrow">Workflow</span>
-              <h1>Two distinct engines. One automated library.</h1>
+              <h1 class="hero-title-compact hero-title-workflow">
+                <span>Two distinct</span>
+                <span>engines. One</span>
+                <span>automated library.</span>
+              </h1>
               <p>
                 Cliprr operates on two separate tracks depending on your content goals: a reactive engine for live short-form clips, and an analytical engine for long-form VOD breakdowns.
               </p>
@@ -58,40 +71,38 @@
         
         <section class="section">
           <div class="container">
-             <div class="section-lead" style="margin-bottom: 42px; padding-bottom: 12px; border-bottom: 1px solid rgba(255,255,255,0.1);">
-                <span class="gradient-line" style="font-size: 1.5rem; font-weight: 800; letter-spacing: 0.1em; text-transform: uppercase;">Engine A</span>
-                <h2 style="margin-top: 8px;">The Live Shortform Pipeline</h2>
+             <div class="section-lead workflow-lead">
+                <span class="gradient-line workflow-kicker">Engine A</span>
+                <h2 class="workflow-title">The Live Shortform Pipeline</h2>
                 <p>Built for 30-second Twitch clips. Driven by live stream metrics and optimized by a continuous learning loop.</p>
              </div>
           </div>
 
           <div class="container split-grid">
             <div class="page-stack">
-              <span class="gradient-line" style="font-size: 3.5rem; font-weight: 900; line-height: 1;">01</span>
+              <span class="gradient-line workflow-step">01</span>
               <h3>Set live detection thresholds.</h3>
               <p>
                 Cliprr monitors the active stream. You control what triggers a 30-second clip by setting specific confidence thresholds and streamer cooldowns.
               </p>
             </div>
-            <div class="screenshot-frame" style="align-self: center;">
-              <!-- ACTION SHOT: The monitor settings panel -->
-              <img src="./Screenshots/macro-crop-monitor-settings.jpg" alt="Cliprr monitor threshold settings" />
+            <div class="screenshot-frame screenshot-frame-centered">
+              <img src="./Screenshots/macro-crop-monitor-settings.jpg" alt="Cliprr monitor threshold settings" width="795" height="623" loading="lazy" decoding="async" />
             </div>
           </div>
         </section>
 
-        <section class="section" style="padding-top: 0;">
-          <div class="container split-grid" style="direction: rtl;">
-            <div class="page-stack" style="direction: ltr;">
-              <span class="gradient-line" style="font-size: 3.5rem; font-weight: 900; line-height: 1;">02</span>
+        <section class="section section-no-top">
+          <div class="container split-grid split-grid-reverse">
+            <div class="page-stack page-stack-normal">
+              <span class="gradient-line workflow-step">02</span>
               <h3>Optimize through learning.</h3>
               <p>
                 The system doesn't guess. It tracks which generated titles and clips perform best on YouTube, surfacing suggested rule changes for your approval to improve the next live run.
               </p>
             </div>
-            <div class="screenshot-frame" style="align-self: center; direction: ltr;">
-              <!-- ACTION SHOT: Learning tab showing metric feedback/rule adjustments -->
-              <img src="./Screenshots/macro-crop-learning-diff.jpg" alt="Cliprr learning parameter changes" />
+            <div class="screenshot-frame screenshot-frame-centered screenshot-frame-normal-flow">
+              <img src="./Screenshots/macro-crop-learning-diff.jpg" alt="Cliprr learning parameter changes" width="828" height="567" loading="lazy" decoding="async" />
             </div>
           </div>
         </section>
@@ -102,40 +113,38 @@
 
         <section class="section">
           <div class="container">
-             <div class="section-lead" style="margin-bottom: 42px; padding-bottom: 12px; border-bottom: 1px solid rgba(255,255,255,0.1);">
-                <span class="gradient-line" style="font-size: 1.5rem; font-weight: 800; letter-spacing: 0.1em; text-transform: uppercase;">Engine B</span>
-                <h2 style="margin-top: 8px;">The VOD Longform Pipeline</h2>
+             <div class="section-lead workflow-lead">
+                <span class="gradient-line workflow-kicker">Engine B</span>
+                <h2 class="workflow-title">The VOD Longform Pipeline</h2>
                 <p>Built for archiving and long-form content extraction. Drop in a link and let the analytical engine map the entire broadcast.</p>
              </div>
           </div>
 
           <div class="container split-grid">
             <div class="page-stack">
-              <span class="gradient-line" style="font-size: 3.5rem; font-weight: 900; line-height: 1;">01</span>
+              <span class="gradient-line workflow-step">01</span>
               <h3>Map the hype blocks.</h3>
               <p>
                 Paste a VOD URL or local MP4. Cliprr analyzes the entire timeline, visualizing chat density and audio intensity to isolate the highest-confidence blocks.
               </p>
             </div>
-            <div class="screenshot-frame" style="align-self: center;">
-              <!-- ACTION SHOT: The VOD heat block timeline -->
-              <img src="./Screenshots/macro-crop-vod-selection-list.jpg" alt="Cliprr VOD heat blocks" />
+            <div class="screenshot-frame screenshot-frame-centered">
+              <img src="./Screenshots/macro-crop-vod-selection-list.jpg" alt="Cliprr VOD heat blocks" width="1382" height="635" loading="lazy" decoding="async" />
             </div>
           </div>
         </section>
 
-        <section class="section" style="padding-top: 0;">
-          <div class="container split-grid" style="direction: rtl;">
-            <div class="page-stack" style="direction: ltr;">
-              <span class="gradient-line" style="font-size: 3.5rem; font-weight: 900; line-height: 1;">02</span>
+        <section class="section section-no-top">
+          <div class="container split-grid split-grid-reverse">
+            <div class="page-stack page-stack-normal">
+              <span class="gradient-line workflow-step">02</span>
               <h3>Extract longform segments.</h3>
               <p>
                 Select the mapped blocks that matter. The engine cuts and processes the longer segments, bypassing manual scrubbing entirely.
               </p>
             </div>
-            <div class="screenshot-frame" style="align-self: center; direction: ltr;">
-              <!-- ACTION SHOT: The selected VOD segments ready for export -->
-              <img src="./Screenshots/macro-crop-vod-heat-blocks.jpg" alt="Cliprr selected blocks list" />
+            <div class="screenshot-frame screenshot-frame-centered screenshot-frame-normal-flow">
+              <img src="./Screenshots/macro-crop-vod-heat-blocks.jpg" alt="Cliprr selected blocks list" width="1248" height="558" loading="lazy" decoding="async" />
             </div>
           </div>
         </section>
@@ -158,8 +167,7 @@
               </p>
             </div>
             <div class="screenshot-frame">
-              <!-- ACTION SHOT: Show the live clip library grid -->
-              <img src="./Screenshots/macro-crop-library-grid.jpg" alt="Cliprr short-form output library" />
+              <img src="./Screenshots/macro-crop-library-grid.jpg" alt="Cliprr short-form output library" width="1565" height="455" loading="lazy" decoding="async" />
             </div>
           </div>
         </section>
@@ -168,7 +176,7 @@
       <footer class="footer">
         <div class="container footer-shell">
           <div class="footer-brand">
-            <img src="./assets/brand/app-icon.jpg" alt="Cliprr icon" />
+            <img src="./assets/brand/app-icon-96.jpg" alt="Cliprr icon" width="42" height="42" loading="lazy" decoding="async" />
             <div>
               <strong>Cliprr</strong>
               <p class="footer-note">Twitch clip automation built around monitoring, review, and repeatable output.</p>
@@ -176,7 +184,7 @@
           </div>
           <div class="footer-links">
             <a href="./index.html">Home</a>
-            <a href="./platform.html">Platform</a>
+            <a href="./workflow.html">Workflow</a>
             <a href="./pricing.html">Plans</a>
             <a href="./faq.html">FAQ</a>
           </div>

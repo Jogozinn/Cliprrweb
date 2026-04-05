@@ -12,7 +12,7 @@
       <header class="topbar">
   <div class="container topbar-shell">
     <a class="brand-lockup" href="./index.html">
-      <img src="./assets/brand/app-icon.jpg" alt="Cliprr app icon" style="width: 40px; height: 40px; border-radius: 10px;" />
+      <img src="./assets/brand/app-icon-96.jpg" alt="Cliprr app icon" width="40" height="40" />
       <div class="brand-copy">
         <strong>Cliprr</strong>
         <span>Twitch clip automation</span>
@@ -33,6 +33,15 @@
       </button>
     </div>
   </div>
+  <div class="container mobile-panel" data-mobile-panel hidden>
+    <nav class="mobile-nav" aria-label="Mobile">
+      <a class="mobile-link" href="./index.html">Home</a>
+      <a class="mobile-link" href="./workflow.html">Workflow</a>
+      <a class="mobile-link" href="./pricing.html" aria-current="page">Plans</a>
+      <a class="mobile-link" href="./faq.html">FAQ</a>
+    </nav>
+    <a class="button mobile-panel-cta" href="https://github.com/Jogozinn/cliprr-releases/releases/latest">Download Trial</a>
+  </div>
 </header>
 
       <main>
@@ -50,26 +59,24 @@
         </section>
 
         <!-- PRICING GRID (SINGLE FOCUSED TIER) -->
-        <section class="section" style="padding-top: 0;">
+        <section class="section section-no-top">
           <div class="container">
-            <!-- Centered, single-column grid for the lifetime license -->
-            <div class="plans-grid" style="grid-template-columns: minmax(0, 480px); justify-content: center;">
+            <div class="plans-grid plans-grid-single">
               
-              <!-- THE LIFETIME LICENSE CARD -->
-              <article class="plan-card featured" style="transform: none; margin-top: 0;">
+              <article class="plan-card featured plan-card-flat">
                 <div>
-                  <div style="display: flex; justify-content: space-between; align-items: center;">
+                  <div class="plan-card-head">
                     <h3>Lifetime License</h3>
-                    <span class="micro-label" style="border-color: var(--success); color: var(--success);">One-Time Payment</span>
+                    <span class="micro-label micro-label-success">One-Time Payment</span>
                   </div>
                   <span class="plan-kicker">7-day free trial included. No card required to test.</span>
                   
-                  <div style="margin: 24px 0; padding-bottom: 24px; border-bottom: 1px solid rgba(255,255,255,0.1);">
-                    <span style="font-size: 3.5rem; font-weight: 900; color: #fff;">$37</span>
+                  <div class="plan-price">
+                    <span class="plan-price-value">$37</span>
                   </div>
                   
-                  <div style="margin-bottom: 16px;">
-                    <strong style="display: block; margin-bottom: 8px; color: #fff;">What's included:</strong>
+                  <div class="plan-intro">
+                    <strong class="plan-intro-title">What's included:</strong>
                   </div>
                   
                   <ul class="plan-list">
@@ -81,18 +88,18 @@
                   </ul>
                 </div>
                 
-                <div style="margin-top: 32px; display: grid; gap: 12px;">
-                  <a class="button" href="https://jogozin.gumroad.com/l/cliprr" style="width: 100%;">Buy Lifetime Key</a>
+                <div class="plan-actions">
+                  <a class="button plan-button" href="https://jogozin.gumroad.com/l/cliprr">Buy Lifetime Key</a>
                   
-                  <a class="button-secondary" href="https://github.com/Jogozinn/cliprr-releases/releases/latest" style="width: 100%;">Download 7-Day Trial</a>
+                  <a class="button-secondary plan-button" href="https://github.com/Jogozinn/cliprr-releases/releases/latest">Download 7-Day Trial</a>
                 </div>
                 
-                <div style="margin-top: 16px; text-align: center; display: flex; flex-direction: column; gap: 12px;">
-                  <a href="https://github.com/Jogozinn/cliprr-releases" class="text-link" target="_blank" rel="noopener" style="font-size: 0.75rem; opacity: 0.6; text-decoration: none;">
+                <div class="plan-meta">
+                  <a href="https://github.com/Jogozinn/cliprr-releases" class="text-link plan-meta-link" target="_blank" rel="noopener">
                     View source & releases on GitHub &rarr;
                   </a>
                   
-                  <span style="font-size: 0.8rem; color: var(--text-soft); opacity: 0.8;">Secure checkout powered by Gumroad.</span>
+                  <span class="plan-meta-note">Secure checkout powered by Gumroad.</span>
                 </div>
               </article>
 
@@ -131,7 +138,7 @@
       <footer class="footer">
         <div class="container footer-shell">
           <div class="footer-brand">
-            <img src="./assets/brand/app-icon.jpg" alt="Cliprr icon" />
+            <img src="./assets/brand/app-icon-96.jpg" alt="Cliprr icon" width="42" height="42" loading="lazy" decoding="async" />
             <div>
               <strong>Cliprr</strong>
               <p class="footer-note">Twitch clip automation built around monitoring, review, and repeatable output.</p>
