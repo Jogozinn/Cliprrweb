@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Optional AI setup for Cliprr. Install Ollama, run qwen2:7b locally, and improve title suggestions without making AI setup a blocker."
+    />
+    <title>Cliprr Website | AI Setup</title>
+    <link rel="stylesheet" href="./assets/styles/site.css" />
+  </head>
+  <body data-page="ai-setup">
+    <div class="site-shell">
+      <header class="topbar">
+        <div class="container topbar-shell">
+          <a class="brand-lockup" href="./index.html">
+            <img src="./assets/brand/app-icon-96.jpg" alt="Cliprr app icon" width="40" height="40" />
+            <div class="brand-copy">
+              <strong>Cliprr</strong>
+              <span>Twitch clip automation</span>
+            </div>
+          </a>
+
+          <nav class="nav-row" aria-label="Primary">
+            <a class="nav-link" href="./index.html">Home</a>
+            <a class="nav-link" href="./workflow.html">Workflow</a>
+            <a class="nav-link" href="./pricing.html">Plans</a>
+            <a class="nav-link" href="./faq.html">FAQ</a>
+          </nav>
+
+          <div class="topbar-actions">
+            <a class="button" href="./download.html">Download</a>
+            <button class="mobile-toggle" type="button" data-mobile-toggle aria-expanded="false" aria-label="Open navigation">
+              <span></span><span></span><span></span>
+            </button>
+          </div>
+        </div>
+        <div class="container mobile-panel" data-mobile-panel hidden>
+          <nav class="mobile-nav" aria-label="Mobile">
+            <a class="mobile-link" href="./index.html">Home</a>
+            <a class="mobile-link" href="./workflow.html">Workflow</a>
+            <a class="mobile-link" href="./pricing.html">Plans</a>
+            <a class="mobile-link" href="./faq.html">FAQ</a>
+          </nav>
+          <a class="button mobile-panel-cta" href="./download.html">Download Cliprr</a>
+        </div>
+      </header>
+
+      <main>
+        <section class="page-hero ai-setup-hero">
+          <div class="container hero-center-stack">
+            <div class="hero-copy">
+              <span class="eyebrow">AI Setup</span>
+              <h1>Optional AI setup for better titles.</h1>
+              <p>
+                Cliprr works without any model setup. This page is only for users who want to connect a local model through
+                Ollama and improve title suggestions inside the app.
+              </p>
+              <div class="action-row">
+                <a class="button" href="https://ollama.com/download/windows" target="_blank" rel="noopener">Download Ollama</a>
+                <a class="button-secondary" href="./download.html">Back to Download</a>
+              </div>
+              <p class="ai-setup-note">Current recommended local setup: Ollama + qwen2:7b.</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="section section-no-top">
+          <div class="container split-grid">
+            <div class="page-stack">
+              <div class="section-lead">
+                <span class="eyebrow">Before you start</span>
+                <h2>Do this only if you want enhanced titles.</h2>
+              </div>
+              <p class="section-copy section-copy-tight">
+                Cliprr can already run its normal title workflow without Ollama. The AI setup is an upgrade path for users who
+                want stronger local title suggestions.
+              </p>
+              <p class="section-copy">
+                This page is intentionally focused on the current local setup. Later versions of Cliprr can expand this into a
+                broader model setup page for OpenAI and other providers without changing the basic flow.
+              </p>
+            </div>
+
+            <div class="panel ai-setup-sidecard">
+              <span class="micro-label micro-label-success">Recommended path</span>
+              <h3>Standard first. AI second.</h3>
+              <div class="faq-list ai-setup-checklist">
+                <div class="download-check-item">Install and test Cliprr first</div>
+                <div class="download-check-item">Install Ollama only if you want better titles</div>
+                <div class="download-check-item">Run the recommended model once</div>
+                <div class="download-check-item">Return to Cliprr and enable the local model path</div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="container">
+            <div class="section-lead section-lead-centered">
+              <span class="eyebrow">Setup steps</span>
+              <h2>Get the local model running in a few minutes.</h2>
+              <p>The goal is not to turn users into local AI experts. It is just to make Cliprr title generation better.</p>
+            </div>
+
+            <div class="download-steps-grid">
+              <article class="step-card panel">
+                <span class="gradient-line workflow-step">01</span>
+                <h3>Install Ollama.</h3>
+                <p class="panel-copy">
+                  Download and install Ollama for Windows. Once installed, it provides the local runtime that Cliprr can talk to.
+                </p>
+              </article>
+
+              <article class="step-card panel">
+                <span class="gradient-line workflow-step">02</span>
+                <h3>Open Command Prompt.</h3>
+                <p class="panel-copy">
+                  After Ollama is installed, open Command Prompt or Terminal on your PC so you can pull the recommended model.
+                </p>
+              </article>
+
+              <article class="step-card panel">
+                <span class="gradient-line workflow-step">03</span>
+                <h3>Run the model once.</h3>
+                <p class="panel-copy">
+                  Start qwen2:7b through Ollama. That downloads the model the first time and makes the local setup usable for Cliprr.
+                </p>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section class="section section-no-top">
+          <div class="container split-grid split-grid-reverse">
+            <div class="page-stack page-stack-normal">
+              <div class="section-lead">
+                <span class="eyebrow">Command</span>
+                <h2>Use this in Command Prompt.</h2>
+                <p>Run the command below after Ollama finishes installing.</p>
+              </div>
+              <div class="ai-command-block">
+                <code>ollama run qwen2:7b</code>
+              </div>
+              <p class="section-copy section-copy-tight">
+                The first run may take a while because Ollama needs to download the model locally.
+              </p>
+              <p class="section-copy">
+                After that, go back to Cliprr and use your local AI title flow the way your app settings expect.
+              </p>
+            </div>
+
+            <div class="panel ai-setup-panel">
+              <span class="micro-label">What to expect</span>
+              <h3>Normal setup behavior.</h3>
+              <ul class="download-list">
+                <li>Ollama installs separately from Cliprr</li>
+                <li>The first model run downloads local files to your machine</li>
+                <li>Cliprr should still be usable even before you finish this step</li>
+                <li>You can keep this setup optional for non-technical users</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="container faq-columns ai-setup-faq-grid">
+            <div class="page-stack">
+              <div class="faq-column faq-column-pink">
+                <span class="gradient-line faq-column-kicker">Need to know</span>
+                <div class="faq-list faq-column-list">
+                  <details class="faq-item" open>
+                    <summary>Do I need this to use Cliprr?</summary>
+                    <p>No. Cliprr works without Ollama. This setup is only for users who want stronger local title suggestions.</p>
+                  </details>
+                  <details class="faq-item">
+                    <summary>What model should I use right now?</summary>
+                    <p>The current recommended local model for Cliprr is qwen2:7b.</p>
+                  </details>
+                </div>
+              </div>
+            </div>
+
+            <div class="page-stack">
+              <div class="faq-column faq-column-blue">
+                <span class="gradient-line faq-column-kicker">Future ready</span>
+                <div class="faq-list faq-column-list">
+                  <details class="faq-item" open>
+                    <summary>Will this page change later?</summary>
+                    <p>Yes. This page is designed to grow into a broader AI setup page once Cliprr supports OpenAI keys and other model providers.</p>
+                  </details>
+                  <details class="faq-item">
+                    <summary>Will OpenAI go here later too?</summary>
+                    <p>Yes. When v1.1 adds provider choice in settings, this page can expand into local and hosted model setup instructions.</p>
+                  </details>
+                </div>
+              </div>
+            </div>
+
+            <div class="page-stack">
+              <div class="faq-column faq-column-green">
+                <span class="gradient-line faq-column-kicker">Support flow</span>
+                <div class="faq-list faq-column-list">
+                  <details class="faq-item" open>
+                    <summary>What if Ollama is installed but titles still do not improve?</summary>
+                    <p>First confirm Cliprr is configured to use the local model path you expect. Then verify that qwen2:7b was actually run through Ollama.</p>
+                  </details>
+                  <details class="faq-item">
+                    <summary>Should this be on the main download path?</summary>
+                    <p>No. Keep this as an optional setup page so normal users can install Cliprr without getting blocked by AI steps.</p>
+                  </details>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="container">
+            <section class="cta-banner">
+              <div>
+                <span class="eyebrow">Next step</span>
+                <h2>Install Cliprr first, then add AI when you want it.</h2>
+                <p>Keep the main product flow simple. Use this page as the optional upgrade path for local title generation.</p>
+              </div>
+              <div class="action-row">
+                <a class="button" href="./download.html">Go to Download</a>
+                <a class="button-secondary" href="./faq.html">Open FAQ</a>
+              </div>
+            </section>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <div class="container footer-shell">
+          <div class="footer-brand">
+            <img src="./assets/brand/app-icon-96.jpg" alt="Cliprr icon" width="42" height="42" loading="lazy" decoding="async" />
+            <div>
+              <strong>Cliprr</strong>
+              <p class="footer-note">Twitch clip automation built around monitoring, review, and repeatable output.</p>
+            </div>
+          </div>
+          <div class="footer-links">
+            <a href="./index.html">Home</a>
+            <a href="./workflow.html">Workflow</a>
+            <a href="./pricing.html">Plans</a>
+            <a href="./faq.html">FAQ</a>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="./assets/scripts/site.js"></script>
+  </body>
+</html>

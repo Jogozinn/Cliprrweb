@@ -27,7 +27,7 @@
     </nav>
 
     <div class="topbar-actions">
-      <a class="button" href="https://github.com/Jogozinn/cliprr-releases/releases/latest">Download Trial</a>
+      <a class="button" href="./download.html">Download</a>
       <button class="mobile-toggle" type="button" data-mobile-toggle aria-expanded="false" aria-label="Open navigation">
         <span></span><span></span><span></span>
       </button>
@@ -40,7 +40,7 @@
       <a class="mobile-link" href="./pricing.html">Plans</a>
       <a class="mobile-link" href="./faq.html" aria-current="page">FAQ</a>
     </nav>
-    <a class="button mobile-panel-cta" href="https://github.com/Jogozinn/cliprr-releases/releases/latest">Download Trial</a>
+    <a class="button mobile-panel-cta" href="./download.html">Download</a>
   </div>
 </header>
 
@@ -83,7 +83,7 @@
 
               <div class="page-stack">
                 <div class="faq-column faq-column-blue">
-                   <span class="gradient-line faq-column-kicker">Hardware & Logic</span>
+                   <span class="gradient-line faq-column-kicker">Hardware, Logic & AI</span>
                    <div class="faq-list faq-column-list">
                       <details class="faq-item">
                         <summary>Does Cliprr use my GPU?</summary>
@@ -96,6 +96,18 @@
                       <details class="faq-item">
                         <summary>Are there limits on VOD size?</summary>
                         <p>No. There are no hard-coded limits on VOD length or file size. The analyzer is only bounded by your local disk space and processing power.</p>
+                      </details>
+                      <details class="faq-item">
+                        <summary>Do I need Ollama to use Cliprr?</summary>
+                        <p>No. Cliprr works without local AI setup. Ollama is optional and only used if you want stronger local title suggestions.</p>
+                      </details>
+                      <details class="faq-item">
+                        <summary>What model does Cliprr use for local AI right now?</summary>
+                        <p>The current recommended local setup is Ollama with qwen2:7b. You can follow the full instructions on the AI setup page.</p>
+                      </details>
+                      <details class="faq-item">
+                        <summary>Where do I set up Ollama and qwen2:7b?</summary>
+                        <p>Use the dedicated <a href="./setup-ai.html">AI Setup</a> page. It walks through installing Ollama, running qwen2:7b, and returning to Cliprr.</p>
                       </details>
                    </div>
                 </div>
@@ -133,7 +145,8 @@
                <h2 class="faq-cta-title">Built for Power Users.</h2>
                <p class="faq-cta-copy">Cliprr is a local-first application. No hidden cloud fees, no data harvesting. Just a high-performance tool for serious content creators.</p>
                <div class="action-row faq-cta-actions">
-                 <a class="button" href="https://github.com/Jogozinn/cliprr-releases/releases/latest">Download 7-Day Trial</a>
+                 <a class="button" href="./download.html">Download Cliprr</a>
+                 <a class="button-secondary" href="./setup-ai.html">AI Setup</a>
                  <a class="button-secondary" href="./pricing.html">Buy Lifetime Key</a>
                </div>
             </div>
@@ -155,6 +168,7 @@
             <a href="./workflow.html">Workflow</a>
             <a href="./pricing.html">Plans</a>
             <a href="./faq.html">FAQ</a>
+            <a href="./setup-ai.html">AI Setup</a>
           </div>
         </div>
       </footer>
