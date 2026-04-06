@@ -647,6 +647,30 @@ button {
   }
 }
 
+/* Fix for the side-by-side cards on Download page */
+.download-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr)); /* Force side-by-side */
+  align-items: stretch; /* Ensures cards are same height */
+  gap: 24px;
+}
+
+/* Ensure the card internal structure pushes the button to the bottom */
+.download-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.download-card .plan-actions {
+  margin-top: auto; /* Pushes the button to the bottom regardless of text length */
+}
+
+/* Fix for the logo underline in the topbar */
+.brand-lockup {
+  text-decoration: none !important;
+}
+
+
+
 .ai-setup-hero {
   background: radial-gradient(circle at 50% 100%, rgba(141, 115, 255, 0.1), transparent 52%);
 }
@@ -702,6 +726,18 @@ button {
   }
 }
 
+.ai-setup-panel {
+  align-self: center;
+  direction: ltr; 
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* This stops the bubble from stretching! */
+  gap: 12px; 
+}
+/* 3. Reset the heading margin since we are using 'gap' now */
+.ai-setup-panel h3 {
+  margin-top: 6px; 
+}
 
 .icon-pulse {
   width: 10px;
@@ -908,8 +944,8 @@ button {
 }
 
 .plan-card-flat {
-  transform: none;
-  margin-top: 0;
+  transform: none !important;
+  margin-top: 0 !important;
 }
 
 .plans-grid-single {
