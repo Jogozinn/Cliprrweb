@@ -67,88 +67,92 @@
         </section>
 
         <!-- ========================================== -->
-        <!-- ENGINE 1: LIVE SHORTFORM                   -->
-        <!-- ========================================== -->
-        
-        <section class="section">
-          <div class="container">
-             <div class="section-lead workflow-lead">
-                <span class="gradient-line workflow-kicker">Engine A</span>
-                <h2 class="workflow-title">The Live Shortform Pipeline</h2>
-                <p>Built for 30-second Twitch clips. Driven by live stream metrics and optimized by a continuous learning loop.</p>
-             </div>
-          </div>
+<!-- ENGINE 1: LIVE SHORTFORM                   -->
+<!-- ========================================== -->
 
-          <div class="container split-grid">
-            <div class="page-stack">
-              <span class="gradient-line workflow-step">01</span>
-              <h3>Set live detection thresholds.</h3>
-              <p>
-                Cliprr monitors the active stream. You control what triggers a 30-second clip by setting specific confidence thresholds and streamer cooldowns.
-              </p>
-            </div>
-            <div class="screenshot-frame screenshot-frame-centered">
-              <img src="./Screenshots/macro-crop-monitor-settings.jpg" alt="Cliprr monitor threshold settings" width="795" height="623" loading="lazy" decoding="async" />
-            </div>
-          </div>
-        </section>
+<section class="section workflow-engine-section">
+  <div class="container">
+    <div class="section-lead workflow-lead">
+      <span class="gradient-line workflow-kicker">Engine A</span>
+      <h2 class="workflow-title">The Live Shortform Pipeline</h2>
+      <p>Built for 30-second Twitch clips. Driven by live stream metrics and optimized by a continuous learning loop.</p>
+    </div>
+  </div>
 
-        <section class="section section-no-top">
-          <div class="container split-grid split-grid-reverse">
-            <div class="page-stack page-stack-normal">
-              <span class="gradient-line workflow-step">02</span>
-              <h3>Optimize through learning.</h3>
-              <p>
-                The system doesn't guess. It tracks which generated titles and clips perform best on YouTube, surfacing suggested rule changes for your approval to improve the next live run.
-              </p>
-            </div>
-            <div class="screenshot-frame screenshot-frame-centered screenshot-frame-normal-flow">
-              <img src="./Screenshots/macro-crop-learning-diff.jpg" alt="Cliprr learning parameter changes" width="828" height="567" loading="lazy" decoding="async" />
-            </div>
-          </div>
-        </section>
+  <div class="container split-grid workflow-stage-grid">
+    <div class="page-stack workflow-stage-copy">
+      <span class="workflow-chip">Monitor setup</span>
+      <h3>Set live detection thresholds.</h3>
+      <p>
+        Cliprr monitors the active stream. You control what triggers a 30-second clip by setting specific confidence thresholds and streamer cooldowns.
+      </p>
+    </div>
 
-        <!-- ========================================== -->
-        <!-- ENGINE 2: VOD LONGFORM                     -->
-        <!-- ========================================== -->
+    <div class="screenshot-frame screenshot-frame-centered workflow-stage-media">
+      <img src="./Screenshots/macro-crop-monitor-settings.jpg" alt="Cliprr monitor threshold settings" width="795" height="623" loading="lazy" decoding="async" />
+    </div>
+  </div>
+</section>
 
-        <section class="section">
-          <div class="container">
-             <div class="section-lead workflow-lead">
-                <span class="gradient-line workflow-kicker">Engine B</span>
-                <h2 class="workflow-title">The VOD Longform Pipeline</h2>
-                <p>Built for archiving and long-form content extraction. Drop in a link and let the analytical engine map the entire broadcast.</p>
-             </div>
-          </div>
+<section class="section section-no-top workflow-stage-section">
+  <div class="container split-grid split-grid-reverse workflow-stage-grid">
+    <div class="page-stack page-stack-normal workflow-stage-copy">
+      <span class="workflow-chip">Learning loop</span>
+      <h3>Optimize through learning.</h3>
+      <p>
+        The system doesn't guess. It tracks which generated titles and clips perform best on YouTube, surfacing suggested rule changes for your approval to improve the next live run.
+      </p>
+    </div>
 
-          <div class="container split-grid">
-            <div class="page-stack">
-              <span class="gradient-line workflow-step">01</span>
-              <h3>Map the hype blocks.</h3>
-              <p>
-                Paste a VOD URL or local MP4. Cliprr analyzes the entire timeline, visualizing chat density and audio intensity to isolate the highest-confidence blocks.
-              </p>
-            </div>
-            <div class="screenshot-frame screenshot-frame-centered">
-              <img src="./Screenshots/macro-crop-vod-selection-list.jpg" alt="Cliprr VOD heat blocks" width="1382" height="635" loading="lazy" decoding="async" />
-            </div>
-          </div>
-        </section>
+    <div class="screenshot-frame screenshot-frame-centered screenshot-frame-normal-flow workflow-stage-media">
+      <img src="./Screenshots/macro-crop-learning-diff.jpg" alt="Cliprr learning parameter changes" width="828" height="567" loading="lazy" decoding="async" />
+    </div>
+  </div>
+</section>
 
-        <section class="section section-no-top">
-          <div class="container split-grid split-grid-reverse">
-            <div class="page-stack page-stack-normal">
-              <span class="gradient-line workflow-step">02</span>
-              <h3>Extract longform segments.</h3>
-              <p>
-                Select the mapped blocks that matter. The engine cuts and processes the longer segments, bypassing manual scrubbing entirely.
-              </p>
-            </div>
-            <div class="screenshot-frame screenshot-frame-centered screenshot-frame-normal-flow">
-              <img src="./Screenshots/macro-crop-vod-heat-blocks.jpg" alt="Cliprr selected blocks list" width="1248" height="558" loading="lazy" decoding="async" />
-            </div>
-          </div>
-        </section>
+<!-- ========================================== -->
+<!-- ENGINE 2: VOD LONGFORM                     -->
+<!-- ========================================== -->
+
+<section class="section workflow-engine-section">
+  <div class="container">
+    <div class="section-lead workflow-lead">
+      <span class="gradient-line workflow-kicker">Engine B</span>
+      <h2 class="workflow-title">The VOD Longform Pipeline</h2>
+      <p>Built for archiving and long-form content extraction. Drop in a link and let the analytical engine map the entire broadcast.</p>
+    </div>
+  </div>
+
+  <div class="container split-grid workflow-stage-grid">
+    <div class="page-stack workflow-stage-copy">
+      <span class="workflow-chip">Timeline scan</span>
+      <h3>Map the hype blocks.</h3>
+      <p>
+        Paste a VOD URL or local MP4. Cliprr analyzes the entire timeline, visualizing chat density and audio intensity to isolate the highest-confidence blocks.
+      </p>
+    </div>
+
+    <div class="screenshot-frame screenshot-frame-centered workflow-stage-media">
+      <img src="./Screenshots/macro-crop-vod-selection-list.jpg" alt="Cliprr VOD heat blocks" width="1382" height="635" loading="lazy" decoding="async" />
+    </div>
+  </div>
+</section>
+
+<section class="section section-no-top workflow-stage-section">
+  <div class="container split-grid split-grid-reverse workflow-stage-grid">
+    <div class="page-stack page-stack-normal workflow-stage-copy">
+      <span class="workflow-chip">Segment export</span>
+      <h3>Extract longform segments.</h3>
+      <p>
+        Select the mapped blocks that matter. The engine cuts and processes the longer segments, bypassing manual scrubbing entirely.
+      </p>
+    </div>
+
+    <div class="screenshot-frame screenshot-frame-centered screenshot-frame-normal-flow workflow-stage-media">
+      <img src="./Screenshots/macro-crop-vod-heat-blocks.jpg" alt="Cliprr selected blocks list" width="1248" height="558" loading="lazy" decoding="async" />
+    </div>
+  </div>
+</section>
 
         <!-- ========================================== -->
         <!-- SHARED OUTPUT                              -->

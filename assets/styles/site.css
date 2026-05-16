@@ -1338,6 +1338,98 @@ button {
   box-shadow: var(--focus-ring);
 }
 
+
+/* =========================
+   Workflow page stage chips
+   ========================= */
+
+   .workflow-stage-grid {
+    align-items: center;
+    gap: clamp(28px, 5vw, 56px);
+  }
+  
+  .workflow-stage-copy {
+    align-self: center;
+    gap: 14px;
+  }
+  
+  .workflow-stage-copy h3 {
+    margin: 0;
+    max-width: 560px;
+    font-size: clamp(1.35rem, 2.2vw, 2rem);
+    line-height: 1.12;
+    letter-spacing: -0.04em;
+    color: #fff;
+  }
+  
+  .workflow-stage-copy p {
+    max-width: 560px;
+    margin: 0;
+  }
+  
+  .workflow-chip {
+    display: inline-flex;
+    width: fit-content;
+    align-items: center;
+    gap: 8px;
+    min-height: 30px;
+    padding: 0 11px;
+    border: 1px solid rgba(255, 255, 255, 0.11);
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.045);
+    color: rgba(247, 243, 255, 0.78);
+    font-size: 0.72rem;
+    font-weight: 800;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+  
+  .workflow-chip::before {
+    content: "";
+    width: 7px;
+    height: 7px;
+    flex: 0 0 auto;
+    border-radius: 999px;
+    background: linear-gradient(180deg, var(--pink), var(--blue));
+    box-shadow: 0 0 14px rgba(141, 115, 255, 0.45);
+  }
+  
+  .workflow-stage-media {
+    position: relative;
+  }
+  
+  .workflow-stage-media::before {
+    content: "";
+    position: absolute;
+    inset: -1px;
+    pointer-events: none;
+    border-radius: inherit;
+    background: linear-gradient(135deg, rgba(255, 120, 207, 0.16), transparent 34%, rgba(90, 149, 255, 0.14));
+    opacity: 0.55;
+  }
+  
+  @media (max-width: 1024px) {
+    .workflow-stage-grid {
+      gap: 22px;
+    }
+  
+    .workflow-stage-copy {
+      gap: 12px;
+    }
+  }
+  
+  @media (max-width: 640px) {
+    .workflow-chip {
+      min-height: 28px;
+      padding-inline: 10px;
+      font-size: 0.68rem;
+    }
+  
+    .workflow-stage-copy h3 {
+      font-size: clamp(1.22rem, 5.5vw, 1.58rem);
+    }
+  }
+
 @media (hover: hover) and (pointer: fine) {
   .nav-link:hover {
     color: #fff;
